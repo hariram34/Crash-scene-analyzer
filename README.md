@@ -7,3 +7,14 @@ The application would use the IMU sensor values and perform a roll over detectio
 - Use OpenCV to analyze and collect information about the crash scene.
 - Sensor interfacing and roll over detection.
 - CUDA will be used to parallelize the deep learning application.
+- A display device will be used for interactive messages
+- QT and CUDA will be used to render display graphics
+
+<!--
+@startuml SimpleDesign
+JetsonNano->Camera : CSI2 
+IMUunit-down-> JetsonNano: I2C 
+JetsonNano-down->Display: SPI
+@enduml
+-->
+![](firstDiagram.svg)
