@@ -10,6 +10,8 @@ The application would use the IMU sensor values and perform a roll over detectio
 - A display device will be used for interactive messages
 - QT and CUDA will be used to render display graphics
 
+![](SimpleDesign.svg)
+
 <!--
 @startuml SimpleDesign
 JetsonNano->Camera : CSI2 
@@ -17,4 +19,3 @@ IMUunit-down-> JetsonNano: I2C
 JetsonNano-down->Display: SPI
 @enduml
 -->
-![](firstDiagram.svg)
